@@ -12,11 +12,41 @@
     <style>
         /* &#xf244;
  */
+        
+        #div1 {
+            font-size: 5rem;
+            color: green;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <div id="div1" class="fa"></div>
+    <script>
+        function chargebattery() {
+            var a;
+            a = document.getElementById("div1");
+            a.innerHTML = "&#xf244;";
+            setTimeout(function() {
+                a.innerHTML = "&#xf243;";
+            }, 1000);
+            setTimeout(function() {
+                a.innerHTML = "&#xf242;";
+            }, 2000);
+            setTimeout(function() {
+                a.innerHTML = "&#xf241;";
+            }, 3000);
+            setTimeout(function() {
+                a.innerHTML = "&#xf240;";
+            }, 4000);
+        }
+        chargebattery();
+        setInterval(chargebattery, 5000);
+    </script>
+
+    <h1>How to use an icon library to make an animated effect.</h1>
 
 </body>
 
